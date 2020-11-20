@@ -398,7 +398,7 @@ class data_adaptor:
             md.MeshType = vtk.VTK_MULTIBLOCK_DATA_SET
             md.BlockType = vtk.VTK_POLY_DATA
             md.NumBlocks = n_ranks
-            md.NumLocalBlocks = [1]
+            md.NumBlocksLocal = [1]
             md.BlockIds = [rank]
             md.BlockOwner = [rank]
             md.StaticMesh = 1
